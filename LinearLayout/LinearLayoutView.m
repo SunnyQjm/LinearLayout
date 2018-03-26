@@ -94,6 +94,9 @@
         totalLayoutHeight += lp.height;
         totalLayoutWidth += lp.width;
     }
+    if(totalSubWeight < _weightSum){    //父布局指定weightSum，且子布局weight之和小于该值
+        totalSubWeight = _weightSum;
+    }
     if(remainSpace < 0){    //无剩余空间了
         remainSpace = 0;
     } else if(_orientation == VERTICAL){
@@ -164,10 +167,6 @@
                     CGRectMake(left, top, mWidth, mHeight);
             alreadyLayoutWidth += mWidth;
         }
-    }
-
-    if(totalSubWeight > _weightSum || _weightSum < 0){    //根据weight均分剩余空间
-        //TODO 先留坑，待实现
     }
 
 

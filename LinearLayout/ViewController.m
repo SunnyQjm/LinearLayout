@@ -24,6 +24,7 @@
             CGRectMake(0, 20, windowWidth, windowHeight)];
     linearLayout.backgroundColor = [UIColor lightGrayColor];
 //    linearLayout.orientation = HORIZONTAL;
+    linearLayout.weightSum = 5;
     UITextView *tv = [[UITextView alloc]init];
     tv.text = @"sdafsd";
     tv.backgroundColor = [UIColor redColor];
@@ -31,7 +32,7 @@
     tv = [[UITextView alloc] init];
     tv.text = @"ndsfjksdnfkjsdnf";
     tv.backgroundColor = [UIColor greenColor];
-    [linearLayout addSubView:tv withLayoutParams:[[LinearLayoutParams alloc] initWithWidth:200 withHeight:0 withGravity:GRAVITY_CENTER withWeight:1] ];
+    [linearLayout addSubView:tv withLayoutParams:[[LinearLayoutParams alloc] initWithWidth:200 withHeight:0 withGravity:GRAVITY_CENTER withWeight:2] ];
 //    tv = [[UITextView alloc] init];
 //    tv.text = @"sdafsd";
 //    tv.backgroundColor = [UIColor redColor];

@@ -25,7 +25,6 @@ typedef enum Orientation{
 
 - initWithWidth:(CGFloat)width withHeight:(CGFloat)height withWeight:(int)weight;
 
-
 - initWithWidth:(CGFloat)width withHeight:(CGFloat)height withGravity:(enum Gravity)gravity withWeight: (int) weight;
 
 @property(assign, nonatomic) enum Gravity gravity;
